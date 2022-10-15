@@ -1,6 +1,6 @@
 import { Detail } from './Detail';
 import { Person } from './Person';
-import { AutoIncrement, BelongsTo, Column, DataType, ForeignKey, HasMany, Model, PrimaryKey, Table, Unique } from 'sequelize-typescript'
+import { AutoIncrement, BelongsTo, Column, DataType, ForeignKey, HasMany, Model, NotNull, PrimaryKey, Table, Unique } from 'sequelize-typescript'
 
 @Table({
     initialAutoIncrement: '1000',
@@ -16,7 +16,8 @@ export class Invoice extends Model<Invoice>{
     @ForeignKey(() => Person)
     @Column({
         field: "id_cliente",
-        type: DataType.INTEGER
+        type: DataType.INTEGER,
+        allowNull: false
     })
     idCliente!: string
 

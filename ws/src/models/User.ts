@@ -1,5 +1,5 @@
 import { Role } from './Role';
-import { AutoIncrement, BelongsTo, Column, DataType, ForeignKey, Model, PrimaryKey, Table, Unique } from 'sequelize-typescript'
+import { AllowNull, AutoIncrement, BelongsTo, Column, DataType, ForeignKey, Model, NotNull, PrimaryKey, Table, Unique } from 'sequelize-typescript'
 import { Person } from './Person'
 
 @Table({
@@ -16,14 +16,17 @@ export class User extends Model<User>{
     @ForeignKey(() => Person)
     @Column({
         field: "id_person",
-        type: DataType.INTEGER
+        type: DataType.INTEGER,
+        allowNull: false
     })
     idPerson!: number
+
 
     @ForeignKey(() => Role)
     @Column({
         field: "id_role",
-        type: DataType.INTEGER
+        type: DataType.INTEGER,
+        allowNull: false
     })
     idRole!: number
 

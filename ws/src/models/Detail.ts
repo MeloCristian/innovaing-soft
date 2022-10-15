@@ -1,6 +1,6 @@
 import { Product } from './Product';
 import { Invoice } from './Invoice';
-import { AutoIncrement, BelongsTo, Column, DataType, ForeignKey, Model, PrimaryKey, Table } from 'sequelize-typescript'
+import { AutoIncrement, BelongsTo, Column, DataType, ForeignKey, Model, NotNull, PrimaryKey, Table } from 'sequelize-typescript'
 
 
 @Table({
@@ -13,18 +13,20 @@ export class Detail extends Model<Detail>{
     @AutoIncrement
     @Column(DataType.BIGINT)
     id!: number
-   
+
     @ForeignKey(() => Invoice)
     @Column({
         field: "id_invoice",
-        type: DataType.INTEGER
+        type: DataType.INTEGER,
+        allowNull: false
     })
     idInvoice!: number
 
     @ForeignKey(() => Product)
     @Column({
         field: "id_product",
-        type: DataType.INTEGER
+        type: DataType.INTEGER,
+        allowNull: false
     })
     idProduct!: number
 
