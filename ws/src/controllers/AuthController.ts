@@ -4,6 +4,8 @@ import jwt from "jsonwebtoken";
 import { Crypto } from "../lib/Crypto";
 const crypto = new Crypto();
 const AES_KEY = Buffer.from(process.env.AES_KEY!, "hex");
+
+// controlller for basic auth service
 export const AuthController = {
     async sigIn(data: any): Promise<any> {
         let user: any = await User.findOne({
