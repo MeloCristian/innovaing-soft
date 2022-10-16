@@ -9,7 +9,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
 import { SigninWithHeaderFooterComponent } from './signin-with-header-footer/signin-with-header-footer.component';
 import { SignupWithHeaderFooterComponent } from './signup-with-header-footer/signup-with-header-footer.component';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PersonComponent } from './person/person.component';
 
 
 
@@ -20,12 +21,14 @@ import { ReactiveFormsModule } from '@angular/forms';
     ForgotPasswordComponent,
     ResetPasswordComponent,
     LockScreenComponent,
+    PersonComponent,
     SigninWithHeaderFooterComponent,
     SignupWithHeaderFooterComponent],
   imports: [
     CommonModule,
     AuthRoutingModule,
     ReactiveFormsModule,
+    FormsModule
   ]
 })
 export class AuthModule { }
