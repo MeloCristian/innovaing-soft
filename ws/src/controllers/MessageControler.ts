@@ -1,5 +1,5 @@
 const accountSid = 'ACc6765e026a1c0aed8f041d88b7f7bbdb' // El id de tu cuenta; 
-const authToken = 'c3beca97bf97f9344b9172f7d6845e53' // El TOKEN de tu cuenta; 
+const authToken = 'cde464871fa44512934bc2e754bf238c' // El TOKEN de tu cuenta; 
 import  Twilio  from "twilio";
 
 export const MessageController = {
