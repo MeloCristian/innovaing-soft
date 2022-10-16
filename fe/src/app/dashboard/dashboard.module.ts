@@ -5,11 +5,13 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 
 import { DefaultComponent } from './default/default.component';
+import { TutorialComponent } from './tutorial/tutorial.component';
 
 
 @NgModule({
   declarations: [
-    DefaultComponent
+    DefaultComponent,
+    TutorialComponent
   ],
   imports: [
     CommonModule,

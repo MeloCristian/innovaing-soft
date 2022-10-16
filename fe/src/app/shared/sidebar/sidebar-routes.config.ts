@@ -4,6 +4,27 @@ import { RouteInfo } from './sidebar.metadata';
 export const ROUTES: RouteInfo[] = [
     {
         path: '',
+        title: 'home',
+        icon: 'bx bx-book-alt',
+        class: 'sub',
+        badge: '',
+        badgeClass: '',
+        isExternalLink: false,
+        submenu: [
+            {
+                path: 'dashboard/default',
+                title: 'Tutoriales',
+                icon: 'bx bx-right- arrow - alt',
+                class: '',
+                badge: '',
+                badgeClass: '',
+                isExternalLink: false,
+                submenu: []
+            },
+        ]
+    },
+    {
+        path: '',
         title: 'Productos',
         icon: 'bx bx-archive',
         class: 'sub',
@@ -23,43 +44,4 @@ export const ROUTES: RouteInfo[] = [
             },
         ]
     },
-
-    {
-        path: '',
-        title: 'Área',
-        icon: 'bx bx-book-alt',
-        class: 'sub',
-        badge: '',
-        badgeClass: '',
-        isExternalLink: false,
-        submenu: [
-            {
-                path: '/dashboard/saber-pro/area',
-                title: 'Asignar área',
-                icon: 'bx bx-right- arrow - alt',
-                class: '',
-                badge: '',
-                badgeClass: '',
-                isExternalLink: false,
-                submenu: []
-            },
-            {
-                path: '/dashboard/saber-pro/area/listar',
-                title: 'Listar área',
-                icon: 'bx bx-right- arrow - alt',
-                class: '',
-                badge: '',
-                badgeClass: '',
-                isExternalLink: false,
-                submenu: []
-            },
-
-
-        ]
-    },
-
-
-
-
-
 ];
