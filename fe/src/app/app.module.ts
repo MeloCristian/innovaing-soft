@@ -25,8 +25,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true,
   wheelPropagation: false
 }
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { ArttechModule } from './arttech/arttech.module';
+
 
 @NgModule({
   declarations: [
