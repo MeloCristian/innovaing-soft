@@ -9,7 +9,6 @@ import { sequelize } from './src/sequelize'
 import cookieParser from 'cookie-parser'
 import morgan from 'morgan'
 
-
 const app = express()
 app.use(morgan('dev'));
 app.use(express.json());

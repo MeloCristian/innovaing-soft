@@ -19,7 +19,7 @@ export class AuthService {
   ) { }
 
   login({ email, password }): Observable<any> {
-    return this.http.post(this.uri + 'auth/sig-in', { email: email, password: password });
+    return this.http.post(this.uri + '/auth/sig-in', { email: email, password: password });
   }
 
   logout(redirect: boolean) {
@@ -39,7 +39,7 @@ export class AuthService {
       if (!token) {
         reject(false);
       }
-      this.http.get(this.uri + 'auth/verify-session', { headers: { authorization: `Bearer ${token}` } }).subscribe({
+      this.http.get(this.uri + '/auth/verify-session', { headers: { authorization: `Bearer ${token}` } }).subscribe({
         next: (resp: any) => {
           if (resp.token) {
             resolve(true);

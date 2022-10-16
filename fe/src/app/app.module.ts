@@ -1,3 +1,4 @@
+import { ArttechModule } from './arttech/arttech.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -42,6 +43,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyDKXKdHQdtqgPVl2HI2RnUa_1bjCxRCQo4' }),
     ToastrModule.forRoot(), // ToastrModule added
+    ArttechModule,
     PerfectScrollbarModule
   ],
   providers: [
