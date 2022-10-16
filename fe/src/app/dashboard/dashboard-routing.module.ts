@@ -14,7 +14,7 @@ const routes: Routes = [
         }
       },
       {
-        path: 'saber-pro',
+        path: 'arttech',
         loadChildren: () => import('../arttech/arttech-routing.module').then(m => m.ArttechRoutingModule)
       },
     ],

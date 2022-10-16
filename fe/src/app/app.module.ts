@@ -25,6 +25,7 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   wheelPropagation: false
 }
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ArttechModule } from './arttech/arttech.module';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     SharedModule,
     AgmCoreModule.forRoot({ apiKey: 'AIzaSyDKXKdHQdtqgPVl2HI2RnUa_1bjCxRCQo4' }),
     ToastrModule.forRoot(), // ToastrModule added
+    ArttechModule,
     PerfectScrollbarModule
   ],
   providers: [

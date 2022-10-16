@@ -4,17 +4,17 @@ import { RouteInfo } from './sidebar.metadata';
 export const ROUTES: RouteInfo[] = [
     {
         path: '',
-        title: 'Pregunta&Respuesta',
-        icon: 'bx bx-list-check',
+        title: 'Productos',
+        icon: 'bx bx-archive',
         class: 'sub',
         badge: '',
         badgeClass: '',
         isExternalLink: false,
         submenu: [
             {
-                path: '/dashboard/saber-pro/question-answer',
-                title: 'Asignar respuestas',
-                icon: 'bx bx-right- arrow - alt',
+                path: '/dashboard/arttech/catalog',
+                title: 'Catalogo',
+                icon: 'bx bxs-food-menu',
                 class: '',
                 badge: '',
                 badgeClass: '',
