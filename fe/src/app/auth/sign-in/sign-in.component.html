@@ -1,0 +1,58 @@
+<div class="bg-login">
+	<!--wrapper-->
+	<div class="wrapper">
+		<div class="section-authentication-signin d-flex align-items-center justify-content-center my-5 my-lg-0">
+			<div class="container-fluid">
+				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+					<div class="col mx-auto">
+						<div class="card">
+							<div class="card-body">
+								<div class="border p-4 rounded">
+									<div class="mb-4 text-center">
+										<img src="assets/images/logo.png" width="150" class="rounded-circle" />
+									</div>
+									<div class="text-center">
+										<h3 class="">Iniciar sesión</h3>
+										<p>Aun no estas registrado? <a href="JavaScript:;"
+												(click)="onSignup()">Regístrate aquí</a>
+										</p>
+									</div>
+									<div class="form-body">
+										<form class="row g-3" (submit)="login()" [formGroup]="form">
+											<div class="col-12">
+												<label for="inputEmailAddress" class="form-label">Correo
+													electrónico</label>
+												<input type="email" class="form-control" id="inputEmailAddress"
+													placeholder="Ingresa tu correo electrónico aquí"
+													formControlName="email">
+											</div>
+											<div class="col-12">
+												<label for="inputChoosePassword" class="form-label">Contraseña</label>
+												<div class="input-group" id="show_hide_password">
+													<input [type]="!showPassword?'password':'text'"
+														class="form-control border-end-0" id="password"
+														formControlName="password" placeholder="Ingresa tu contraseña">
+													<a (click)="showPassword = !showPassword"
+														class="input-group-text bg-transparent"><i
+															class='bx bx-hide'></i></a>
+												</div>
+											</div>
+											<div class="col-12">
+												<div class="d-grid">
+													<button type="submit" class="btn btn-primary"><i
+															class="bx bxs-lock-open"></i>Ingresar</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+			</div>
+		</div>
+	</div>
+	<!--end wrapper-->
+</div>
