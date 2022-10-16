@@ -1,0 +1,22 @@
+<div class="container">
+<div *ngFor="let art of array" style="max-width: 300px;">
+<!-- This card needs Bootstrap 4 Beta to work. -->
+<!-- Don't forget to copy small-card.css file too! -->
+
+<div class="card card-custom bg-white border-white" style="margin: 4%; " >
+    <div class="card-custom-img" style="background-image: url({{art.img1}});"></div>
+    <div class="card-custom-avatar">
+      <img class="img-fluid" src="{{art.img2}}" alt="Avatar" />
+    </div>
+    <div class="card-body" style="overflow-y: auto">
+      <h4 class="card-title">{{art.name}} | {{ art.price}}</h4>
+      <p class="card-text">{{art.description}} </p>
+    </div>
+    <div class="card-footer" style="background: inherit; border-color: inherit;">
+      <a (click)="Comprar()" style="margin-right: 4%;" class="btn btn-primary"  data-toggle="tooltip" data-placement="left" title="Comprar producto"><i class='bx bx-cart'></i></a>
+      <a (click)="Chat()" class="btn btn-outline-primary"data-toggle="tooltip" data-placement="left" title="Obtener más información"><i class='bx bx-message-dots'></i></a>
+    </div>
+  </div>
+  
+</div>
+</div>

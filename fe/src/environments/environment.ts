@@ -4,7 +4,11 @@
 
 export const environment = {
   production: false,
+<<<<<<< HEAD
   apiUrl: "http://localhost:3000/api"
+=======
+  apiUrl: "http://192.168.151.127:3000/api/"
+>>>>>>> 86c42af615e8b4fc72008ac13f39d38c65730255
 };
 
 /*
