@@ -27,7 +27,11 @@ export class MessageComponent implements OnInit {
   }
 
   save(){
-    this._messageService.sendMessage({message: this.form.value.toString()}).subscribe({
+    this._messageService.sendMessage({
+      message: "Nombre: "+this.form.value.name+"\n"+
+      "Asunto: "+this.form.value.subject+"\n"+
+     "Mensaje: "+ this.form.value.message
+    }).subscribe({
       next: (data)=>{
         this.toastr.success('Mensaje enviado!', 'Éxito!');
       },
