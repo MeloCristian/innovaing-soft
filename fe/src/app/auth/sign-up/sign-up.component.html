@@ -37,10 +37,13 @@
 													</a>
 												</div>
 											</div>
-											<select class="form-select" aria-label="Default select example" formControlName="idRole">
-												<option selected>Seleccione su rol</option>
-												<option *ngFor="let role of roles" [value]="role.id">{{role.name}}</option>
-											  </select>
+											<div class="col-12">
+												<label for="role" class="form-label">Rol</label>
+												<select class="form-select" aria-label="Default select example" formControlName="idRole" id="role">										
+													<option *ngFor="let role of roles" [value]="role.id">{{role.name}}</option>
+												</select>
+											</div>
+											
 											<div class="col-12">
 												<div class="d-grid">
 													<button type="submit" class="btn btn-primary"><i

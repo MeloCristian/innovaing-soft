@@ -39,7 +39,7 @@ export class SignInComponent implements OnInit {
 
   // On Signup link click
   onSignup() {
-    this.router.navigate(['/dashboard/arttech/person'], { relativeTo: this.route.parent });
+    this.router.navigate(['/auth/person'], { relativeTo: this.route.parent });
   }
 
   login() {

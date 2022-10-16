@@ -1,19 +1,19 @@
-import { PersonComponent } from './person/person.component';
+import { MessageComponent } from './message/message.component';
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, } from '@angular/router';
 import { CatalogComponent } from './catalog/catalog.component';
 
 const routes: Routes = [
   {
-    path: 'person',
-    component: PersonComponent,
+    path: 'catalog',
+    component: CatalogComponent,
     data: {
-      title: 'PersonManagement'
+      title: 'Badge'
     }
   },
   {
-    path: 'catalog',
-    component: CatalogComponent,
+    path: 'message',
+    component: MessageComponent,
     data: {
       title: 'Badge'
     }

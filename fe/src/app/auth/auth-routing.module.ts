@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LockScreenComponent } from './lock-screen/lock-screen.component';
+import { PersonComponent } from './person/person.component';
 import { ResetPasswordComponent } from './reset-password/reset-password.component';
 import { SignInComponent } from './sign-in/sign-in.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
@@ -60,6 +61,13 @@ const routes: Routes = [
         component: LockScreenComponent,
         data: {
           title: 'Lock Screen'
+        }
+      },
+      {
+        path: 'person',
+        component: PersonComponent,
+        data: {
+          title: 'PersonManagement'
         }
       },
     ]
