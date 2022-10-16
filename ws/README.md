@@ -1,4 +1,4 @@
-# IcfesApp
+# ArtTech
 
 first -> execute: npm install
 second -> execute: node keys.js. ==> this in order to generate the proper keys
