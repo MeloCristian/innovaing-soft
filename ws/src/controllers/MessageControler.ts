@@ -1,11 +1,11 @@
 const accountSid = 'ACc6765e026a1c0aed8f041d88b7f7bbdb' // El id de tu cuenta; 
 const authToken = 'c3beca97bf97f9344b9172f7d6845e53' // El TOKEN de tu cuenta; 
-const client = require('twilio')(accountSid, authToken); 
-const MessaginResponse = require('twilio').twiml.MessagingResponse;
+import  Twilio  from "twilio";
 
 export const MessageController = {
 
     async sendMessage(req: any, res: any) {
+        const client = Twilio(accountSid, authToken);
        try {
         const {number, message} = req.body;
         const response = await client.messages.create({
@@ -21,7 +21,7 @@ export const MessageController = {
          });
        } catch (error) {
             console.log(error);
-           return res.status(500).send()
+            return res.status(500).send()
        }
     },
 }
